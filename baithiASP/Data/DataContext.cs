@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using baithiASP.Models.Domain;
 
 namespace baithiASP.Entities
 {
@@ -12,7 +13,7 @@ namespace baithiASP.Entities
         }
 
         
-        public DbSet<PhongBan> PhongBans { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
 

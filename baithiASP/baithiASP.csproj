@@ -9,18 +9,18 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <None Remove="Entities\" />
     <None Remove="Views\Web\" />
     <None Remove="Views\Upload\" />
     <None Remove="Models\Domain\" />
     <None Remove="Views\Employees\" />
+    <None Remove="Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
     <Folder Include="Views\Web\" />
     <Folder Include="Views\Upload\" />
     <Folder Include="Models\Domain\" />
     <Folder Include="Views\Employees\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
